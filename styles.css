@@ -1,0 +1,12 @@
+.contains-floating-wiki-image {
+    position: relative;
+}
+
+.floating-wiki-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: rgb(0 0 0 / 35%) 0px 0.5rem 1rem;
+    z-index: 1000;
+    transform: translateX(calc(-100% - 15px));
+}
