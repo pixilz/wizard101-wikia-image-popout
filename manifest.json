@@ -1,0 +1,19 @@
+{
+  "name": "Wizard101 Wiki Images",
+  "version": "1.0",
+  "description": "Makes it so that wizard101 images display on category pages of the wiki when hovered.",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": {
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png"
+    }
+  },
+  "manifest_version": 2,
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["http://www.wizard101central.com/wiki/*"]
+  }]
+}
